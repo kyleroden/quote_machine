@@ -1,0 +1,29 @@
+h2, button {
+  font-family: Arvo, serif;
+}
+
+#container {
+  background-color: #8EA9B2;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+#quote_box {
+  height: 55vh;
+  background-color: white;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+
+#quote_button {
+  padding: 5px;
+}
