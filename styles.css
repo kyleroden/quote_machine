@@ -16,7 +16,7 @@ h2, button {
   background-color: white;
   width: 70%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   flex-wrap: wrap;
@@ -30,4 +30,11 @@ h2, button {
   padding: 5px;
   background-color: #475E65;
   color: #FFF;
+}
+#quote {
+  flex-basis: 5em;
+}
+#twitter_icon {
+  color: #8EA9B2;
+  margin-top: 10px;
 }
