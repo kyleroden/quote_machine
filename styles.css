@@ -12,6 +12,7 @@ h2, button {
 }
 #quote_box {
   height: 55vh;
+  max-height: 600px;
   background-color: white;
   width: 70%;
   display: flex;
@@ -21,9 +22,12 @@ h2, button {
   flex-wrap: wrap;
   border-radius: 4px;
   flex-direction: column;
+
 }
 
 
 #quote_button {
   padding: 5px;
+  background-color: #475E65;
+  color: #FFF;
 }
