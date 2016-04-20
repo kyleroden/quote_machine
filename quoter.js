@@ -11,8 +11,21 @@ quotes = [
   "You only have to do a very few things right in your life so long as you don't do too many things wrong."
 ];
 
-$('#quote_button').click(function() {
+//var current_quote = $("h2").text();
+
+$('#quote_button').click(function rand_quote() {
+  //gather the text of the current quote, so we can compare the new one to it
+  console.log("generating quote");
+  var current_quote = $("h2").text();
   var num = Math.floor(Math.random() * 10 + 1);
   var random_quote = quotes[num];
-  $("#quote").text(random_quote);
+  //console.log(random_quote);
+  if (current_quote !== random_quote) {
+    console.log("true");
+    $("#quote").text(random_quote);
+
+  } else {
+    console.log("false");
+    rand_quote();
+  }
 });
