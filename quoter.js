@@ -15,22 +15,22 @@ var current_quote = '';
 
 $('#quote_button').click(function rand_quote() {
   //gather the text of the current quote, so we can compare the new one to it
-  //var random_quote = '';
   var current_quote = $("h2").text();
   console.log("generating quote, this is the current quote: " + current_quote);
   var num = Math.floor(Math.random() * quotes.length);
   var random_quote = quotes[num];
-  console.log(random_quote);
+  console.log("Here is the new random quote: " + random_quote);
   if (current_quote !== random_quote) {
-    console.log("true");
+    console.log("true, the current quote is different from the new random quote.");
     $("#quote").text(random_quote);
+    current_quote = $("h2").text();
     //random_quote = $("h2").text();
     //current_quote = random_quote;
     //console.log(random_quote);
     //return current_quote;
 
   } else {
-    console.log("false");
+    console.log("false, the two quotes are the same, recursivly running rand_quote again.");
     rand_quote();
   }
 });
