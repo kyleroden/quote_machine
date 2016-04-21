@@ -18,49 +18,30 @@
   <div id="container">
     <div id="quote_box">
       <div id="entry">
-      <i class="fa fa-quote-left" aria-hidden="true"></i>
-      <h2 id="quote">Always do what you are afraid to do.</h2><!--this h2 will change text from jquery click , in 'quoter.js'-->
-      <i class="fa fa-quote-right" aria-hidden="true"></i>
-    </div>
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <h2 id="quote">Always do what you are afraid to do.</h2>
+        <!--this h2 will change text from jquery click , in 'quoter.js'-->
+        <i class="fa fa-quote-right" aria-hidden="true"></i>
+      </div>
       <button id="quote_button">New Quote</button>
       <!--<a href="" id="twitter_link">-->
       <a><i class="fa fa-twitter-square fa-4x" aria-hidden="true" id="twitter_icon"></i></a>
 
     </div>
   </div>
-
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="quoter.js"></script>
-  <!--script to pass string of quote to the tweet box-->
+  <!--script to pass string of quote to the tweet box and allow user to tweet in new window-->
   <script type="text/javascript">
-    $(function(){
-      $("#twitter_icon").on('click', function(){
+    $(function() {
+      $("#twitter_icon").on('click', function() {
         var quote_text = $('#quote').text();
         window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(quote_text));
       });
     });
   </script>
-
-
-  <!--<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
--->
 </body>
 
 </html>

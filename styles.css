@@ -1,14 +1,12 @@
 h2, button {
   font-family: Arvo, serif;
 }
-
 #container {
   background-color: #8EA9B2;
   height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-
 }
 #quote_box {
   text-align: center;
@@ -23,7 +21,6 @@ h2, button {
   border-radius: 4px;
   flex-direction: column;
 }
-
 #entry {
   position: relative;
   padding: 8px;
@@ -47,7 +44,6 @@ h2, button {
   opacity: .8;
   cursor: pointer;
   font-weight: 900;
-
 }
 #quote {
   flex-basis: 5em;
@@ -60,7 +56,6 @@ h2, button {
   opacity: .8;
   cursor: pointer;
 }
-
 @media screen and (min-width: 480px) {
   #quote_box {
     height: 50vh;

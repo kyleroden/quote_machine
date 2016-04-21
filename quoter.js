@@ -24,11 +24,6 @@ $('#quote_button').click(function rand_quote() {
     console.log("true, the current quote is different from the new random quote.");
     $("#quote").text(random_quote);
     current_quote = $("h2").text();
-    //random_quote = $("h2").text();
-    //current_quote = random_quote;
-    //console.log(random_quote);
-    //return current_quote;
-
   } else {
     console.log("false, the two quotes are the same, recursivly running rand_quote again.");
     rand_quote();
