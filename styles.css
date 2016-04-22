@@ -58,7 +58,8 @@ h2, button {
 }
 @media screen and (min-width: 480px) {
   #quote_box {
-    height: 50vh;
+    height: 65vh;
     justify-content: center;
+    min-height: 295px;
   }
 }
